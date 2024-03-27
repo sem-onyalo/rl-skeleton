@@ -5,14 +5,14 @@ from typing import DefaultDict
 from typing import List
 
 from function import Policy
-from mdp import MDP
+from environment import MDP
 from model import ExperienceMemory
 from model import Transition
 from model import RunHistory
 from registry import Registry
 from util.constants import *
 
-class Algorithm:
+class Agent:
     mdp:MDP
     policy:Policy
     memory:ExperienceMemory

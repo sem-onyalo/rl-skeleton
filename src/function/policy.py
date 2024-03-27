@@ -3,7 +3,7 @@ import logging
 
 import numpy as np
 
-from mdp import MDP
+from environment import MDP
 
 class Policy:
     epsilon:float

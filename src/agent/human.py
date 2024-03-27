@@ -1,8 +1,8 @@
-from .algorithm import Algorithm
-from mdp import MDP
+from .agent import Agent
+from environment import MDP
 from util.constants import *
 
-class Human(Algorithm):
+class Human(Agent):
     """
     This class facilitates a human operating in an MDP.
     """

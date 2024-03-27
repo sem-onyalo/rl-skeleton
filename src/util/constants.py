@@ -2,6 +2,10 @@ LOCAL_REGISTRY = "local-registry"
 
 GRID_TARGET_MDP = "grid-target"
 
+SKELETON_AGENT = "skl"
+STABLE_BASELINES3_AGENT = "sb3"
+
+DQN = "dqn"
 HUMAN = "human"
 MACHINE = "machine"
 MACHINE_TRAINING = "machine-training"
@@ -31,3 +35,6 @@ THEME_DARK        = (  0,  23,  31)
 
 X = 0
 Y = 1
+
+SB3_DQN = f"{STABLE_BASELINES3_AGENT}-{DQN}"
+SKL_QLEARNING = f"{SKELETON_AGENT}-{Q_LEARNING}"

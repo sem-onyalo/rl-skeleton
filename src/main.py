@@ -1,8 +1,8 @@
 import argparse
 import logging
 
-from algorithm import Human
-from mdp import GridTargetMDP
+from agent import Human
+from environment import GridTargetMDP
 from registry import LocalRegistry
 from util.constants import *
 
