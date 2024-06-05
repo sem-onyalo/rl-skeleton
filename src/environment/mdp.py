@@ -1,10 +1,14 @@
 import logging
+from abc import ABC
 from typing import Dict
 from typing import Tuple
 
 import numpy as np
 
-class MDP:
+class MDP(ABC):
+    """
+    This class represents a Markov Decision Process designed for running RL agent actions.
+    """
     n_state:int
     n_action:int
     d_state:Tuple[int, int]
@@ -20,6 +24,8 @@ class MDP:
 
         :return The current state.
         """
+        self.current_step = 0
+
         return self._get_state()
 
     def step(self, action:int) -> Tuple[np.ndarray, float, bool, Dict[str, object]]:
@@ -32,6 +38,8 @@ class MDP:
             Whether or not the next state is a terminal state,
             Additional info as a result of the specified action
         """
+        self.current_step += 1
+
         self._apply_action(action)
 
         state = self._get_state()
