@@ -1,0 +1,21 @@
+[project]
+name = "rl-skeleton"
+version = "0.0.1"
+description = "Skeleton code for RL applications."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy==2.*",
+    "pydantic==2.*",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = [
+    "tests/unit",
+]
